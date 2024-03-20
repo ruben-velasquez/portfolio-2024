@@ -6,3 +6,4 @@
 - [ ] Update projects image
 - [ ] Write resume
 - [ ] Add photo
+- [ ] Refactor badges lists
