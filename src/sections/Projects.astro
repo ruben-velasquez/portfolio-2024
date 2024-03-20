@@ -21,7 +21,7 @@ const PROJECTS = [
 
 <section class="mt-10 grid gap-2">
     <h1 class="text-2xl font-bold">Proyectos</h1>
-    <ul class="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 flex-col items-center gap-4">
+    <ul class="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 flex-col flex-wrap items-center gap-4">
         {
             PROJECTS.map(project => (
                 <ProjectCard id={project.id} title={project.title} description={project.description} badges={project.badges} url={project.url}/>
