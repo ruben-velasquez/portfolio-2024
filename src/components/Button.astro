@@ -1,0 +1,14 @@
+---
+interface Props {
+    ariaLabel: string
+    href?: string
+}
+
+const { href, ariaLabel } = Astro.props;
+---
+
+<a href={href || "#"} aria-label={ariaLabel} class="w-9 h-9 border border-white rounded-lg flex items-center justify-center text-white hover:text-gray-900 hover:bg-white transition group">
+    <div class="group-hover:scale-110 transition">
+        <slot />
+    </div>
+</a>
