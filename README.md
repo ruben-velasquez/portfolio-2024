@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Minimal
 
 ```sh
@@ -45,3 +46,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# portfolio-2024
+El portafolio personal de Rubén Velásquez para el año 2024
+>>>>>>> bc68737c397e57f96c7a3e1fdd3ac991dd020f0d
