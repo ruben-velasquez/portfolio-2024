@@ -2,6 +2,7 @@
 import ProjectCard from "../components/ProjectCard.astro";
 import Unity from "@/icons/Unity.astro"
 import CSharp from "@/icons/CSharp.astro";
+import NextJS from "@/icons/Nextjs.astro";
 
 const PROJECTS = [
     {
@@ -19,6 +20,19 @@ const PROJECTS = [
                 name: "CSharp", 
                 icon: CSharp, 
                 class: "bg-violet-900 text-white"
+            }
+        ]
+    },
+    {
+        id: "usefulgpt",
+        title: "Useful GPT",
+        description: "A simple interface for OpenAI LLMs with custom prompts.",
+        url: "https://usefulgpt.vercel.app/",
+        badges: [
+            {
+                name: "NextJS", 
+                icon: NextJS, 
+                class: "bg-slate-900 text-white"
             }
         ]
     },
