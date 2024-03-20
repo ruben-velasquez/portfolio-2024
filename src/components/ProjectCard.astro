@@ -1,5 +1,6 @@
 ---
 import Link from "@/icons/Link.astro";
+import Badge from "@/components/Badge.astro";
 
 interface Props {
     id: string,
@@ -26,9 +27,9 @@ const { id, title, description, url, badges } = Astro.props;
         <div class="py-2 flex items-center gap-2">
             {
                 badges.map(badge => (
-                    <span class={"text-sm font-medium me-2 px-3 py-0.5 rounded-full flex items-center justify-center gap-1 " + badge.class}>
+                    <Badge badgeClass={badge.class}>
                         <badge.icon /> {badge.name}
-                    </span>
+                    </Badge>
                 ))
             }
         </div>

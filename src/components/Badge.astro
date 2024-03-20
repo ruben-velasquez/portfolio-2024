@@ -1,0 +1,11 @@
+---
+interface Props {
+    badgeClass: string
+}
+
+const { badgeClass } = Astro.props;
+---
+
+<span class={"text-sm font-medium me-2 px-3 py-0.5 rounded-full flex items-center justify-center gap-1 " + badgeClass}>
+    <slot />
+</span>
