@@ -1,0 +1,24 @@
+---
+import Unity from "@/icons/Unity.astro";
+import Badge from "@/components/Badge.astro";
+
+const SKILLS = [
+    {
+        name: "Unity", 
+        icon: Unity, 
+        class: "bg-slate-900 text-white"
+    }
+]
+---
+
+<section class="mt-4 font-bold">
+    <p class="text-lg inline-flex items-center gap-2">Skills: 
+        {
+            SKILLS.map(skill => (
+                <Badge badgeClass={skill.class}>
+                    <skill.icon /> {skill.name}
+                </Badge>
+            ))
+        }
+    </p>
+</section>
