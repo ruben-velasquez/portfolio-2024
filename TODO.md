@@ -7,3 +7,4 @@
 - [ ] Write resume
 - [ ] Add photo
 - [ ] Refactor badges lists
+- [ ] Change favicon
