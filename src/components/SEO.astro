@@ -1,0 +1,32 @@
+---
+/*
+    Part of the component taken from:
+    https://github.com/midudev/la-velada-web-oficial/blob/main/src/components/SEO.astro
+*/
+
+interface Props {
+    title: string,
+    description: string,
+    canonical: string,
+}
+
+const { title, description, canonical } = Astro.props;
+---
+<title>{title}</title>
+
+<meta charset="UTF-8" />
+<meta name="theme-color" content="#020617" />
+<meta name="description" content={description} />
+
+<meta name="keywords" content="portfolio, gamedev, frontend, backend, ruben" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<link rel="canonical" href={canonical}>
+
+<meta name="viewport" content="width=device-width" />
+
+<meta name="theme-color" content="#d5ff00" />
+
+<meta name=”robots” content="index, follow">
+<meta name="googlebot" content="index, follow" />

@@ -4,9 +4,15 @@ import Hero from "@/sections/Hero.astro"
 import Resume from "@/sections/Resume.astro"
 import Projects from "@/sections/Projects.astro"
 import Skills from "@/sections/Skills.astro"
+
+const metadata = {
+	title: "Rubén Velásquez | Portfolio",
+	description: "Desarrollador web y de videojuegos con más de 3 años de experiencia como autodidacta.",
+    canonical: "https://ruben-velasquez.vercel.app/"
+}
 ---
 
-<Layout>
+<Layout {...metadata}>
 	<Hero />
     <Resume />
     <Projects />
